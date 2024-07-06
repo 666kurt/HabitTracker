@@ -11,6 +11,11 @@
 		FCED91412C33313E00BA0275 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED91402C33313E00BA0275 /* ContentView.swift */; };
 		FCED91432C33314100BA0275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCED91422C33314100BA0275 /* Assets.xcassets */; };
 		FCED91462C33314100BA0275 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCED91452C33314100BA0275 /* Preview Assets.xcassets */; };
+		FCED91B42C39B05C00BA0275 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED91B32C39B05C00BA0275 /* Router.swift */; };
+		FCED91B72C39B8A300BA0275 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED91B62C39B8A300BA0275 /* TabBarView.swift */; };
+		FCED91BB2C39BDEB00BA0275 /* TabBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED91BA2C39BDEB00BA0275 /* TabBarLabel.swift */; };
+		FCED91BF2C39C0E300BA0275 /* Color+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED91BE2C39C0E300BA0275 /* Color+ext.swift */; };
+		FCED91C12C39C29900BA0275 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCED91C02C39C29900BA0275 /* TabBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		FCED91402C33313E00BA0275 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FCED91422C33314100BA0275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCED91452C33314100BA0275 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FCED91B32C39B05C00BA0275 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FCED91B62C39B8A300BA0275 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		FCED91BA2C39BDEB00BA0275 /* TabBarLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarLabel.swift; sourceTree = "<group>"; };
+		FCED91BE2C39C0E300BA0275 /* Color+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ext.swift"; sourceTree = "<group>"; };
+		FCED91C02C39C29900BA0275 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +82,7 @@
 		FCED91512C33322A00BA0275 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				FCED91402C33313E00BA0275 /* ContentView.swift */,
+				FCED91B52C39B4C100BA0275 /* TabBar */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -81,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				FCED913E2C33313E00BA0275 /* HabitTrackerApp.swift */,
+				FCED91402C33313E00BA0275 /* ContentView.swift */,
 				FCED91422C33314100BA0275 /* Assets.xcassets */,
 			);
 			path = App;
@@ -96,6 +107,7 @@
 		FCED91542C33332C00BA0275 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FCED91BE2C39C0E300BA0275 /* Color+ext.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -103,8 +115,19 @@
 		FCED91552C33335800BA0275 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				FCED91B32C39B05C00BA0275 /* Router.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		FCED91B52C39B4C100BA0275 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FCED91B62C39B8A300BA0275 /* TabBarView.swift */,
+				FCED91BA2C39BDEB00BA0275 /* TabBarLabel.swift */,
+				FCED91C02C39C29900BA0275 /* TabBarButton.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +201,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCED91412C33313E00BA0275 /* ContentView.swift in Sources */,
+				FCED91B42C39B05C00BA0275 /* Router.swift in Sources */,
+				FCED91BB2C39BDEB00BA0275 /* TabBarLabel.swift in Sources */,
+				FCED91B72C39B8A300BA0275 /* TabBarView.swift in Sources */,
+				FCED91C12C39C29900BA0275 /* TabBarButton.swift in Sources */,
+				FCED91BF2C39C0E300BA0275 /* Color+ext.swift in Sources */,
 				FCED913F2C33313E00BA0275 /* HabitTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,8 +346,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,9 +355,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = blessthedevil.HabitTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -347,8 +379,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,9 +388,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = blessthedevil.HabitTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
